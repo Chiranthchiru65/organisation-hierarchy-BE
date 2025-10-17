@@ -14,10 +14,15 @@ const app = express();
 // connect to MongoDB
 connectDB();
 
+const allowedOrigins = [
+  "http://localhost:5173", // local dev
+  "https://your-frontend.vercel.app", // later after frontend deploy
+];
+
 // Middleware
 app.use(
   cors({
-    origin: "http://localhost:5173", // Vite port
+    origin: allowedOrigins,
     credentials: true,
   })
 );
