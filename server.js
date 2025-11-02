@@ -16,7 +16,7 @@ connectDB();
 
 const allowedOrigins = [
   "http://localhost:5173", // local dev
-  "https://your-frontend.vercel.app", // later after frontend deploy
+  "https://organisation-hierarchy-fe.vercel.app", // later after frontend deploy
 ];
 
 // Middleware
